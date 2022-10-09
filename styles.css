@@ -1,0 +1,10 @@
+
+#box1{
+    background-image: -moz-linear-gradient(top right, #009245 5%, #FCEE21 100%);
+    background-image: -o-linear-gradient(top right, #009245 5%, #FCEE21 100%);
+    background-image: -webkit-linear-gradient(top right, #009245 5%, #FCEE21 100%);
+    background-image: linear-gradient(top right, #009245 5%, #FCEE21 100%);
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+}
