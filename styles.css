@@ -11,7 +11,7 @@
 }
 
 .margin{
-    padding: 14em 0em 25em;
+    padding: 4.2em 0em 25em;
     border-radius: 0.35em;
     text-align: center;
 }
@@ -23,7 +23,31 @@
     background: #fff;
     border: 1px solid #094c0a;
     box-shadow: none;
+    text-align: center;
     border-radius: 24px;
     margin: 0 auto;
     max-width: 584px;
+}
+
+#enter{
+    border-radius: 0.35em;
+    text-align: center;
+    text-transform: uppercase;
+    background: #fff;
+}
+#enter:hover{
+    background: #009245;
+    color: #FCEE21;
+}
+
+#title{
+    font-family: "Papyrus", "Courier New", monospace;
+    color: rgb(9, 15, 132);
+}
+
+.redsintax{
+    font-family: "Courier New", monospace;
+    color: rgb(164, 24, 24) ;
+    padding: 2em 0 0 0;
+
 }
