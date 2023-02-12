@@ -1,19 +1,29 @@
-
-#box1{
-    display: inline-block;
-    background-image: -moz-linear-gradient(top right, #009245 5%, #FCEE21 100%);
-    background-image: -o-linear-gradient(top right, #009245 5%, #FCEE21 100%);
-    background-image: -webkit-linear-gradient(top right, #009245 5%, #FCEE21 100%);
-    background-image: linear-gradient(top right, #009245 5%, #FCEE21 100%);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-repeat: no-repeat;
+    background: linear-gradient(-45deg, red, orange, blue, rgb(2, 1, 35));
+    background-size: 400% 400%;
     width: 100%;
     height: 100%;
-    text-transform: uppercase;
+    animation: back-effect 12s ease infinite;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
 
-.margin{
-    padding: 4.2em 0em 25em;
-    border-radius: 0.35em;
-    text-align: center;
+.flex-container
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.center{
+    margin: 3% auto;
 }
 
 #searchbar{
@@ -29,44 +39,46 @@
     max-width: 584px;
 }
 
-#enter{
-    border-radius: 0.35em;
-    text-align: center;
-    text-transform: uppercase;
-    background: #fff;
+
+@keyframes back-effect{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
-#enter:hover{
-    background: #009245;
-    color: #FCEE21;
+
+.button{
+    padding: 3pt;
+    background: #fff;
+    border: 1px solid #094c0a;
+    border-radius: 18px;
+}
+
+.button:hover{
+    border-style: double;
+    border: 2px solid;
+    border-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.299);
+}
+
+.effetto-testo{
+    background: -webkit-linear-gradient(-45deg, orange, red, blue, rgb(2, 1, 35));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: back-effect 12s ease infinite;;
 }
 
 #title{
-    font-family: "Papyrus", "Courier New", monospace;
-    color: rgb(9, 15, 132);
+    font-size: 30pt;
+    text-decoration: line-through;
 }
 
-.redsintax{
-    font-family: "Courier New", monospace;
-    color: rgb(164, 24, 24) ;
-    padding: 2em 0 0 0;
-
-}
-
-#stringtitle {
-    font-size: 20pt;
-    color: rgb(164, 24, 24) ;
-    padding: 0 0 0 0;
-    font-weight : bold
-}
-
-.container{
-    padding: 1em 2em;
-    border-radius: 0.35em;
-    font-size: 1.5vh;
-    text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 12pt;
-    color: rgb(29, 30, 13);
+.text-result{
+    font-size: 16pt;
+    color: aquamarine;
 }

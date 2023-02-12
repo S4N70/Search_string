@@ -6,18 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap" rel="stylesheet">
     <title> Search string </title>
 </head>
 <body>
-    <div id=box1 class="margin">
-    <h2 id="title">Inserisci stringa</h2> 
-    <form action="string.php"  method="GET"> 
+    <div class="flex-container title animazione">
+    <h4 class="center">Benvenuti su SearchString, un progetto realizzato da Santo Paviglianiti in HTML5, CSS E PHP<br>
+    inserisci una qualsiasi stringa (anche lettere a caso) e lascia fare al sito :)
+    </h4>
+    </div>
+    <div class="flex-container">
+        <h2 class="center effetto-testo" id="title">INSERISCI STRINGA</h2> 
+    </div>
+    <div class="flex-container">
+    <form action="string.php"  method="GET" class="center"> 
         <label for="string"></label>
         <input type="text" name="string" id="searchbar">
         <br>
-        <input type="submit" value="Invia stringa" id="enter"> 
+        <input type="submit" value="Invia stringa" id="enter" class="button"> 
        </form> 
-       <h3 class="redsintax">La stringa deve contenere almeno 5 caratteri</h3>
+    </div>
+    <div class="flex-container">
+        <h3 class="center text-result">La stringa deve contenere almeno 5 caratteri</h3>
     </div>
 </body>
 </html>
