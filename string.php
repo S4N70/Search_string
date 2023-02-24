@@ -12,6 +12,9 @@
 </head>
 <body>   
 <div class="flex-container">
+        <h2 class="center effetto-testo" id="title">SEARCHSTRING</h2> 
+    </div>
+<div class="flex-container">
     <h1 class="center text-result"> 
         <?php
             use function PHPSTORM_META\type;
